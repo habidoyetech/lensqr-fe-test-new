@@ -140,7 +140,7 @@
 
         #togglePassword {
           position: absolute;
-          top: 1rem;
+          top: 1.2rem;
           right: 1rem;
           color: index.$second-font-color;
           opacity: 0.6;
@@ -149,6 +149,7 @@
           font-size: index.$small-size;
           cursor: pointer;
           font-weight: 500;
+          font-family: index.$font-family;
         }
 
         input:valid + .placeholder,

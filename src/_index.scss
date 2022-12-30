@@ -25,4 +25,10 @@ $h3-size: 1.25rem;
 $normal-size: 1rem;
 $small-size: 0.8rem;
 $smaller-size: 0.5rem;
-$font-family: 'Avenir Next', sans-serif;
+$font-family: "AvenierNext", sans-serif;
+
+@font-face {
+  font-family: "AvenierNext";
+  src: local("AvenirNext"),
+   url("./fonts/AvenierNext/AvenirNextLTPro-Regular.otf") format("truetype");
+}
