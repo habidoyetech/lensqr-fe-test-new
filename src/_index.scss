@@ -8,3 +8,21 @@ body {
 *, *::after, *::before {
   box-sizing: border-box;
 }
+
+// Color
+$primary-color: #FFFFFF;
+$first-font-color: #213F7D;
+$second-font-color: #545F7D;
+$button-color: #39CDCC;
+$third-font-color: rgba(84, 95, 125, 0.15);
+$light-dark-primary-color: rgb(252,252,252);
+
+// Fonts Size
+$big-font-size: 3rem;
+$h1-size: 2rem;
+$h2-size: 1.5rem;
+$h3-size: 1.25rem;
+$normal-size: 1rem;
+$small-size: 0.8rem;
+$smaller-size: 0.5rem;
+$font-family: 'Avenir Next', sans-serif;

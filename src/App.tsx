@@ -1,10 +1,11 @@
 import './App.scss';
+import AuthLogSign from './Pages/LoginPage/AuthLogSign';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      Hellow World
-    </div>
+    <>
+      <AuthLogSign/>
+    </>
   );
 }
 
