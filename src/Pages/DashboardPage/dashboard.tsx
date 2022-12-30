@@ -1,12 +1,14 @@
 import React from 'react';
 import './dashboard.scss'
+import Header from '../../Components/Header';
 
-const dashboard: React.FC = () => {
+const Dashboard: React.FC = () => {
   return (
     <div>
+      <Header />
       
     </div>
   )
 }
 
-export default dashboard
+export default Dashboard
