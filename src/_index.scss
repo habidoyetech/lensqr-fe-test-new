@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 
 body {
   margin: 0;
@@ -17,6 +19,7 @@ $button-color: #39CDCC;
 $third-font-color: rgba(84, 95, 125, 0.15);
 $light-dark-primary-color: rgb(252,252,252);
 $shadow-color: rgba(0, 0, 0, 0.04);
+$first-font-color-opac: rgba(33, 63, 125, 0.2);
 
 // Fonts Size
 $big-font-size: 3rem;
@@ -27,6 +30,7 @@ $normal-size: 1rem;
 $small-size: 0.8rem;
 $smaller-size: 0.5rem;
 $font-family: "AvenierNext", sans-serif;
+$font-WorkSans: 'Work Sans', sans-serif;
 
 @font-face {
   font-family: "AvenierNext";
