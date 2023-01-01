@@ -1,9 +1,17 @@
 import React from 'react';
-import './sidebar.scss'
+import './sidebar.scss';
+import SideBarCategoryList from './SideBarCategoryList';
 
-const SideBar = () => {
+
+
+
+const SideBar: React.FC = () => {
   return (
-    <div>SideBar</div>
+    <aside>
+      <div>
+        <SideBarCategoryList/>
+      </div>
+    </aside>
   )
 }
 
