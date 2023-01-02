@@ -12,3 +12,9 @@ export interface SideBarCategoryObject {
   name: string;
   link: SideBarLinkObject[];
 }
+
+export interface UserCardModel {
+  head: string;
+  cardLogo: HTMLElement & SVGAElement | any;
+  userNum: number;
+}

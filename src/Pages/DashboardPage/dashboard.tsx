@@ -8,7 +8,6 @@ const Dashboard: React.FC = () => {
     <div>
       <Header />
       <SideBar/>
-      
     </div>
   )
 }
