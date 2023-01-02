@@ -120,8 +120,8 @@ let categories: SideBarCategoryObject[] = [
 
 const SideBarCategoryList = () => {
   return (
-    <div>
-      <nav>
+    <>
+      <nav className='sidebarcategorylist-container'>
         {categories.map((category) => {
           return (
             <SideBarCategory key={category.id} category={category}/>
@@ -129,7 +129,7 @@ const SideBarCategoryList = () => {
         }) }
       </nav>
 
-    </div>
+    </>
   )
 }
 

@@ -1,0 +1,62 @@
+@use '../index';
+
+.sidebar-container {
+  width: 283px;
+  background-color: index.$primary-color;
+  box-shadow: 0px 5px 20px index.$shadow-color;
+
+  .sidebar {
+
+    .sidebar-head {
+      padding-left: 2.5rem;
+    }
+    
+    .sidebarcategorylist-container {
+
+      
+      ul {
+        
+        h2 {
+          font-size: 12px;
+          font-family: index.$font-WorkSans;
+          line-height: 14px;
+          color: index.$second-font-color;
+          padding: 0;
+          font-weight: 600;
+        }
+
+        li {
+          list-style-type: none;
+          height: 40px;
+          display: flex;
+          align-items: center;
+
+          .sidebarlink-container {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            gap: 10px;
+            
+            .sidebarlink-logo {
+              color: index.$first-font-color;
+              font-weight: 400;
+              display: flex;
+              align-items: center;
+            }
+
+            .sidebarlinkname {
+              color: index.$first-font-color;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 19px;
+              font-family: index.$font-WorkSans;
+              opacity: 0.5;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
