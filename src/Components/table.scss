@@ -1,0 +1,53 @@
+@use '../index';
+
+table {
+  background-color: index.$primary-color;
+  padding-top: 1rem;
+  margin-top: 2rem;
+  color: index.$second-font-color;
+
+  thead {
+    tr {
+
+      
+      th {
+
+        font-size: 12px;
+        line-height: 14.8px;
+        
+        font-weight: 600;
+        font-family: index.$font-WorkSans;
+        text-align: left;
+
+        .table-data-head-container {
+          display: flex;
+          gap: 10px;
+
+          .table-data-img-container {
+            img {
+              width: 16px;
+              height: 10px;
+            }
+          }
+        }
+
+        
+      }
+    }
+  }
+
+  tbody {
+    tr {
+
+      
+
+      td {
+        font-size: 14px;
+        line-height: 16px;
+        font-family: index.$font-WorkSans;
+        font-weight: 400;
+        border-bottom: 1px solid index.$second-font-color;
+      }
+    }
+  }
+}
