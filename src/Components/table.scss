@@ -5,6 +5,7 @@ table {
   padding-top: 1rem;
   margin-top: 2rem;
   color: index.$second-font-color;
+  border-collapse: collapse;
 
   thead {
     tr {
@@ -38,15 +39,15 @@ table {
 
   tbody {
     tr {
-
       
-
       td {
         font-size: 14px;
         line-height: 16px;
         font-family: index.$font-WorkSans;
         font-weight: 400;
         border-bottom: 1px solid index.$second-font-color;
+        padding: 1rem 0;
+        
       }
     }
   }

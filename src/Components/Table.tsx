@@ -1,6 +1,7 @@
 import React from 'react';
 import './table.scss';
-import vector3 from '../Images/vector3.png'
+import vector3 from '../Images/vector3.png';
+import {format} from 'date-fns'
 
 interface Props {
   data: any | undefined;
@@ -21,6 +22,8 @@ const tableHead: string[] =[
   'DATE JOINED',
   'STATUS'
 ]
+
+const tew = new Date()
 
 const Table: React.FC<Props> = ({data}) => {
 
@@ -47,11 +50,11 @@ const Table: React.FC<Props> = ({data}) => {
           {data?.data.map((user: User) => {
             return (
               <tr>
-                <td>{user.orgName}</td>
+                <td>{user.orgName.split('-')[0]}</td>
                 <td>{user.userName}</td>
                 <td>{user.email.toLocaleLowerCase()}</td>
                 <td>{user.phoneNumber}</td>
-                <td>{user.createdAt}</td>
+                <td>{format(new Date(user.createdAt), "E d, yyyy hh:mm aaaaa'm'")}</td>
               </tr>
             )
             
