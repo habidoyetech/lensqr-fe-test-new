@@ -5,6 +5,10 @@ header {
   height: 100px;
   background: index.$primary-color;
   box-shadow: 3px 0px 20px index.$shadow-color;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
 
   .header-container {
     width: 100%;
@@ -13,6 +17,12 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0 4rem;
+
+    .sidebar-menu {
+      display: none;
+      font-size: 24px;
+      color: index.$first-font-color;
+    }
     
     .lendsqr-logo-container {
       display: flex;
@@ -118,3 +128,93 @@ header {
   }
 
 }
+
+@media screen and (max-width: 1023px) {
+
+  header {
+    .header-container {
+
+      padding: 0 1rem;
+
+      .sidebar-menu {
+        display: flex;
+      }
+  
+      .user {
+        
+        .bells {
+          display: none;
+        }
+  
+        .docs {
+          display: none;
+        }
+      }
+    }
+  
+    
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+
+  header {
+    .header-container {
+
+      padding: 0 1rem;
+      
+      .search-container {
+        display: none;
+      }
+
+      .user {
+        
+        .bells {
+          display: none;
+        }
+  
+        .docs {
+          display: none;
+        }
+      }
+    }
+  
+    
+  }
+
+}
+
+@media screen and (max-width: 479px) {
+
+  header {
+    .header-container {
+
+      padding: 0 2rem;
+
+      .lendsqr-logo-container {
+        display: none;
+
+      }
+      
+      .search-container {
+        display: none;
+      }
+
+      .user {
+        
+        .bells {
+          display: none;
+        }
+  
+        .docs {
+          display: none;
+        }
+      }
+    }
+  
+    
+  }
+
+}
+  

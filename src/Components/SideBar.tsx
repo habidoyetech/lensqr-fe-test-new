@@ -5,12 +5,14 @@ import SideBarLink from './SideBarLink';
 import {FaHome, FaToolbox} from 'react-icons/fa';
 
 
+interface Props {
+  sideBarIsShowing: boolean;
+}
 
 
-
-const SideBar: React.FC = () => {
+const SideBar: React.FC<Props> = ({sideBarIsShowing}) => {
   return (
-    <aside className='sidebar-container'>
+    <aside className={`sidebar-container ${sideBarIsShowing? 'show': 'hidden'}`}>
       <div className='sidebar'>
         <div className='sidebar-head'>
           <h2> <SideBarLink sideBarLink={{
