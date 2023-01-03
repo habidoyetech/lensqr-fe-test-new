@@ -1,0 +1,23 @@
+@use '../../index';
+
+.dashboard-container {
+  background-color: index.$bg-color;
+  
+  min-height: 90vh;
+
+  main {
+    padding-top: 100px;
+    background-color: index.$bg-color;
+    display: flex;
+
+    .users-data-container {
+      padding: 1rem;
+
+      .user-cards-container {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}

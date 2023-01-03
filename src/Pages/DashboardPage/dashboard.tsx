@@ -10,18 +10,60 @@ const Dashboard: React.FC = () => {
   const [sideBarIsShowing, setSideBarIsShowing] = useState<boolean>(false)
 
   return (
-    <div>
+    <div className='dashboard-container'>
       <Header setSideBarIsShowing={setSideBarIsShowing} sideBarIsShowing={sideBarIsShowing}/>
       <main>
         <SideBar sideBarIsShowing={sideBarIsShowing}/>
-        <div>
-          <UserCard users={{
-            head: 'Active Users',
-            cardLogo: <HiUserGroup />,
-            userNum: 2345
+        <aside className='users-data-container'>
+          <div className='user-cards-container'>
+            <UserCard users={{
+              head: 'Active Users',
+              cardLogo: <HiUserGroup />,
+              userNum: 2345
 
-          }}/>
-        </div>
+            }}/>
+            <UserCard users={{
+              head: 'Active Users',
+              cardLogo: <HiUserGroup />,
+              userNum: 2345
+
+            }}/>
+            <UserCard users={{
+              head: 'Active Users',
+              cardLogo: <HiUserGroup />,
+              userNum: 2345
+
+            }}/>
+            <UserCard users={{
+              head: 'Active Users',
+              cardLogo: <HiUserGroup />,
+              userNum: 2345
+
+            }}/>
+          </div>
+          <div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Organization</th>
+                   <th>Username</th>
+                   <th>Email</th>
+                   <th>Phone Number</th>
+                   <th>Date Joined</th>
+                   <th>Inactive</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Body</td>
+                </tr>
+
+              </tbody>
+              
+            </table>
+          </div>
+        </aside>
+        
       </main>
     </div>
   )
