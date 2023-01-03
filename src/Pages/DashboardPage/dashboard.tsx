@@ -4,6 +4,7 @@ import Header from '../../Components/Header';
 import SideBar from '../../Components/SideBar';
 import UserCard from '../../Components/UserCard';
 import {HiUserGroup} from 'react-icons/hi'
+import Table from '../../Components/Table';
 
 const Dashboard: React.FC = () => {
 
@@ -42,25 +43,7 @@ const Dashboard: React.FC = () => {
             }}/>
           </div>
           <div>
-            <table>
-              <thead>
-                <tr>
-                  <th>Organization</th>
-                   <th>Username</th>
-                   <th>Email</th>
-                   <th>Phone Number</th>
-                   <th>Date Joined</th>
-                   <th>Inactive</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Body</td>
-                </tr>
-
-              </tbody>
-              
-            </table>
+            <Table />
           </div>
         </aside>
         
