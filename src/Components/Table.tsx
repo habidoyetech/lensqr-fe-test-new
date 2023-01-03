@@ -1,7 +1,8 @@
 import React from 'react';
 import './table.scss';
 import vector3 from '../Images/vector3.png';
-import {format} from 'date-fns'
+import {format} from 'date-fns';
+import  parsePhoneNumber  from 'libphonenumber-js';
 
 interface Props {
   data: any | undefined;
@@ -53,7 +54,7 @@ const Table: React.FC<Props> = ({data}) => {
                 <td>{user.orgName.split('-')[0]}</td>
                 <td>{user.userName}</td>
                 <td>{user.email.toLocaleLowerCase()}</td>
-                <td>{user.phoneNumber}</td>
+                <td>{parsePhoneNumber(user.phoneNumber, 'NG')?.formatNational().split('ext')[0]}</td>
                 <td>{format(new Date(user.createdAt), "E d, yyyy hh:mm aaaaa'm'")}</td>
               </tr>
             )

@@ -6,6 +6,8 @@ table {
   margin-top: 2rem;
   color: index.$second-font-color;
   border-collapse: collapse;
+  box-sizing: border-box;
+  border-radius: 10px;
 
   thead {
     tr {
@@ -13,16 +15,17 @@ table {
       
       th {
 
-        font-size: 12px;
-        line-height: 14.8px;
+        font-size: 10px;
+        line-height: 13px;
         
         font-weight: 600;
         font-family: index.$font-WorkSans;
         text-align: left;
+        padding: 1rem 1rem;
 
         .table-data-head-container {
           display: flex;
-          gap: 10px;
+          gap: 5px;
 
           .table-data-img-container {
             img {
@@ -41,13 +44,12 @@ table {
     tr {
       
       td {
-        font-size: 14px;
-        line-height: 16px;
+        font-size: 12px;
+        line-height: 14px;
         font-family: index.$font-WorkSans;
         font-weight: 400;
         border-bottom: 1px solid index.$second-font-color;
-        padding: 1rem 0;
-        
+        padding: 1rem 1rem;
       }
     }
   }
