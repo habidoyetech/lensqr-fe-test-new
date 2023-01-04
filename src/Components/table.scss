@@ -17,13 +17,13 @@
         
         th {
   
-          font-size: 10px;
+          font-size: 12px;
           line-height: 13px;
           
           font-weight: 600;
           font-family: index.$font-WorkSans;
           text-align: left;
-          padding: 0 1rem 1rem 0;
+          padding: 0 .5rem .5rem 0;
   
           .table-data-head-container {
             display: flex;
@@ -45,21 +45,42 @@
     tbody {
       tr {
         
+        border-bottom: 1px solid index.$first-font-color-opac-01;
+        
         td {
-          font-size: 12px;
+          font-size: 14px;
           line-height: 14px;
           font-family: index.$font-WorkSans;
           font-weight: 400;
-          border-bottom: 1px solid index.$second-font-color;
-          padding: 1rem 0;
+          
+          padding: .2rem 1rem .5rem 0;
+        }
+
+               
+        td:nth-last-child(2) {
+          p {
+            background-color: index.$status-active-background;
+            padding: .5rem;
+            border-radius: 40%;
+            width: 70px;
+            text-align: center;
+            font-size: 14px;
+            color: index.$status-active-color;
+            line-height: 16px;
+            font-weight: 400;
+          }
+          
         }
       }
+      tr:last-child {
+        border-bottom: none;
+      }
     }
+
+   
   }
   
 }
-
-
 
 .pagination {
   list-style-type: none;
