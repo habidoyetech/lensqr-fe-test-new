@@ -1,4 +1,4 @@
-import { IconType } from "react-icons";
+
 
 export interface SideBarLinkObject {
   id: number;
@@ -18,3 +18,4 @@ export interface UserCardModel {
   cardLogo: HTMLElement & SVGAElement | any;
   userNum: number;
 }
+

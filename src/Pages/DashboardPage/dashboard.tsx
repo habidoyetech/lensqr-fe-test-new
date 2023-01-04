@@ -56,7 +56,7 @@ const Dashboard: React.FC = () => {
             }}/>
           </div>
           <div>
-            <Table data={data}/>
+            <Table data={data} itemsPerPage={10}/>
           </div>
         </aside>
         

@@ -1,56 +1,85 @@
 @use '../index';
 
-table {
+.table-container {
   background-color: index.$primary-color;
-  padding-top: 1rem;
-  margin-top: 2rem;
-  color: index.$second-font-color;
-  border-collapse: collapse;
-  box-sizing: border-box;
+  padding: 2rem;
+  width: fit-content;
+  margin-top: 3rem;
   border-radius: 10px;
-
-  thead {
-    tr {
-
+  table {
+    background-color: index.$primary-color;
+    color: index.$second-font-color;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    thead {
       
-      th {
-
-        font-size: 10px;
-        line-height: 13px;
+      tr {
         
-        font-weight: 600;
-        font-family: index.$font-WorkSans;
-        text-align: left;
-        padding: 1rem 1rem;
-
-        .table-data-head-container {
-          display: flex;
-          gap: 5px;
-
-          .table-data-img-container {
-            img {
-              width: 16px;
-              height: 10px;
+        th {
+  
+          font-size: 10px;
+          line-height: 13px;
+          
+          font-weight: 600;
+          font-family: index.$font-WorkSans;
+          text-align: left;
+          padding: 0 1rem 1rem 0;
+  
+          .table-data-head-container {
+            display: flex;
+            gap: 5px;
+  
+            .table-data-img-container {
+              img {
+                width: 13px;
+                height: 8px;
+              }
             }
           }
+  
+          
         }
-
+      }
+    }
+  
+    tbody {
+      tr {
         
+        td {
+          font-size: 12px;
+          line-height: 14px;
+          font-family: index.$font-WorkSans;
+          font-weight: 400;
+          border-bottom: 1px solid index.$second-font-color;
+          padding: 1rem 0;
+        }
       }
     }
   }
+  
+}
 
-  tbody {
-    tr {
-      
-      td {
-        font-size: 12px;
-        line-height: 14px;
-        font-family: index.$font-WorkSans;
-        font-weight: 400;
-        border-bottom: 1px solid index.$second-font-color;
-        padding: 1rem 1rem;
-      }
-    }
+
+
+.pagination {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+  color: index.$second-font-color;
+
+  li {
+    font-size: 15px;
+    line-height: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  li:first-child, li:last-child {
+    background-color: index.$first-font-color-opac-01;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    cursor: pointer;
   }
 }
