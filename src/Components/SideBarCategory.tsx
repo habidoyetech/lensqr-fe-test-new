@@ -13,9 +13,9 @@ const SideBarCategory: React.FC<Props> = ({category}) => {
       <h2>{category.name}</h2>
       <div>
         
-        {category.link.map((link) => {
+        {category.link.map((link, index) => {
             return (
-                <li><SideBarLink sideBarLink={link}/></li>
+                <li key={index}><SideBarLink sideBarLink={link}/></li>
             )
         })}
       </div>

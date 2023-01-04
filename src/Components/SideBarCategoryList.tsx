@@ -68,53 +68,83 @@ let categories: SideBarCategoryObject[] = [
       {
         id: 1.1,
         logo: <FaToolbox/>,
-        linkName: 'Users',
+        linkName: 'Organization',
         arrow: false
       },
       {
         id: 1.2,
         logo: <TiGroup/>,
-        linkName: 'Guarantors',
+        linkName: 'Loan Products',
         arrow: false
       },
       {
         id: 1.3,
         logo: <TiGroup/>,
-        linkName: 'Loans',
+        linkName: 'Savings Products',
         arrow: false
       },
       {
         id: 1.2,
         logo: <TiGroup/>,
-        linkName: 'Decision Models',
+        linkName: 'Fees and Charges',
         arrow: false
       },
       {
         id: 1.2,
         logo: <TiGroup/>,
-        linkName: 'Savings',
+        linkName: 'Transactions',
         arrow: false
       },
       {
         id: 1.2,
         logo: <TiGroup/>,
-        linkName: 'Loan Requests',
+        linkName: 'Services',
         arrow: false
       },
       {
         id: 1.2,
         logo: <TiGroup/>,
-        linkName: 'Whitelists',
+        linkName: 'Service Account',
         arrow: false
       },
       {
         id: 1.2,
         logo: <TiGroup/>,
-        linkName: 'Karma',
+        linkName: 'Settlement',
+        arrow: false
+      },
+      {
+        id: 1.2,
+        logo: <TiGroup/>,
+        linkName: 'Reports',
         arrow: false
       }
     ]
 
+  },
+  {
+    id: 3,
+    name: 'SETTINGS',
+    link: [
+      {
+        id: 1.1,
+        logo: <FaToolbox/>,
+        linkName: 'Preference',
+        arrow: false
+      },
+      {
+        id: 1.2,
+        logo: <TiGroup/>,
+        linkName: 'Fees and Pricing',
+        arrow: false
+      },
+      {
+        id: 1.3,
+        logo: <TiGroup/>,
+        linkName: 'Audit Logs',
+        arrow: false
+      },
+    ]
   }
 ]
 

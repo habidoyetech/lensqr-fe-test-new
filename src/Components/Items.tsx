@@ -18,6 +18,7 @@ interface User {
   email: string;
   phoneNumber: string;
   createdAt: string;
+  id: number;
 }
 
 
@@ -26,7 +27,7 @@ const Items: React.FC<Props> = ({data}) => {
     <>
       {data?.map((user: User) => {
             return (
-              <tr>
+              <tr key={user.id}>
                 <td>{user.orgName.split('-')[0]}</td>
                 <td>{`${user.profile.firstName} ${user.profile.lastName}`}</td>
                 <td>{user.email.toLocaleLowerCase()}</td>

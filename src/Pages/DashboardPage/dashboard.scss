@@ -2,8 +2,8 @@
 
 .dashboard-container {
   background-color: index.$bg-color;
-  
   min-height: 90vh;
+  width: fit-content;
 
   main {
     padding-top: 100px;
@@ -11,7 +11,10 @@
     display: flex;
 
     .users-data-container {
-      padding: 1rem;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
 
       .user-cards-container {
         display: flex;
