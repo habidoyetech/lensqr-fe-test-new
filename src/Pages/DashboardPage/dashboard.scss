@@ -3,7 +3,7 @@
 .dashboard-container {
   background-color: index.$bg-color;
   min-height: 90vh;
-  width: fit-content;
+ 
 
   main {
     padding-top: 100px;
@@ -11,15 +11,23 @@
     display: flex;
 
     .users-data-container {
-      padding: 2rem;
+      padding: 4rem 2rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      
+      .users-data-head {
+        font-size: 24px;
+        font-family: index.$font-WorkSans;
+        color: index.$second-font-color;
+        font-weight: 500;
+      }
 
       .user-cards-container {
         display: flex;
         gap: 1rem;
         flex-wrap: wrap;
+        
       }
     }
   }

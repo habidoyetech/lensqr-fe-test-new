@@ -17,10 +17,8 @@ const Dashboard: React.FC = () => {
   })
 
   if (isLoading) {
-    return <h2>Loading</h2>
+    return <h2>Loading...</h2>
   }
-
-  const onlyData = data?.data
    
   
   return (
@@ -29,6 +27,7 @@ const Dashboard: React.FC = () => {
       <main>
         <SideBar sideBarIsShowing={sideBarIsShowing}/>
         <aside className='users-data-container'>
+          <h1 className='users-data-head'>Users</h1>
           <div className='user-cards-container'>
             <UserCard users={{
               head: 'Active Users',
