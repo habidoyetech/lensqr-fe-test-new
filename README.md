@@ -59,11 +59,9 @@ https://github.com/Habidoye97/lendsqr-fe-test-new
 
 ## Pages
 
-To view the Dashboard add 
-```
-/dashboard
-``` 
-to the url
+The Login page can be accessed with ```https://abiodun-abidoye-lendsqr-fe-test.netlify.app/```
+
+To view the Dashboard page ```https://abiodun-abidoye-lendsqr-fe-test.netlify.app/dashboard```
 
 ## 🤔 Contributing
 
