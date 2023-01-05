@@ -19,8 +19,6 @@ const tableHead: string[] =[
   'STATUS'
 ]
 
-const tew = new Date()
-
 const items: number[] = [];
 
 for(let i=0; i< 100; i++) { items.push(1) }
@@ -44,7 +42,7 @@ const Table: React.FC<Props> = ({data, itemsPerPage}) => {
     console.log(`Loading items from ${itemOffset} to ${endOffset}`);
     setCurrentItems(data.data.slice(itemOffset, endOffset));
     setPageCount(Math.ceil(items.length / itemsPerPage));
-  }, [itemOffset, itemsPerPage]);
+  }, [itemOffset, itemsPerPage, data.data]);
 
   // Invoke when user click to request another page.
   const handlePageClick = (event: any) => {

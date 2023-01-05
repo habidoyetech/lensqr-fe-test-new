@@ -40,7 +40,7 @@ const Header: React.FC<Props> = ({sideBarIsShowing, setSideBarIsShowing}) => {
             <span className='docs'>Docs</span>
             <div className='bells'><img src={bell} alt="notification bell" /></div>
             <div className='user-container'>
-              <img className='user-photo' src={userImage} alt="user image"/>
+              <img className='user-photo' src={userImage} alt="userimage"/>
               <h3 className='username'>Adedeji</h3>
               <img className='arrow' src={VectorTwo} alt="arrow"/>
             </div>
