@@ -10,7 +10,7 @@ const queryClient = new QueryClient()
 const App: React.FC = () => {
   
   return (
-    <>
+    
     <QueryClientProvider client={queryClient}>
       <Router>
         <Routes>
@@ -19,7 +19,7 @@ const App: React.FC = () => {
         </Routes>
       </Router>
     </QueryClientProvider>
-    </>
+    
   );
 }
 

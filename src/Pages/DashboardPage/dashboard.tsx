@@ -33,19 +33,16 @@ const Dashboard: React.FC = () => {
               head: 'Active Users',
               cardLogo: <HiUserGroup />,
               userNum: 2345
-
             }}/>
             <UserCard users={{
               head: 'Active Users',
               cardLogo: <HiUserGroup />,
               userNum: 2345
-
             }}/>
             <UserCard users={{
               head: 'Active Users',
               cardLogo: <HiUserGroup />,
               userNum: 2345
-
             }}/>
             <UserCard users={{
               head: 'Active Users',
