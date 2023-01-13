@@ -25,6 +25,7 @@ interface User {
 const Items: React.FC<Props> = ({data}) => {
 
   const displayUserDetails = () => {
+    
 
   }
 
@@ -32,7 +33,7 @@ const Items: React.FC<Props> = ({data}) => {
     <>
       {data?.map((user: User) => {
             return (
-              <tr key={user.id} onClick={displayUserDetails}>
+              <tr key={user.id} onClick={()=> { displayUserDetails()}}>
                 <td>{user.orgName.split('-')[0]}</td>
                 <td>{`${user.profile.firstName} ${user.profile.lastName}`}</td>
                 <td>{user.email.toLocaleLowerCase()}</td>
