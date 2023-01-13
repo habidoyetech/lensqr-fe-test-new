@@ -63,7 +63,7 @@ const Table: React.FC<Props> = ({data, itemsPerPage}) => {
                 {tableHead.map((head, index) => {
                   return (
                     <th key={index}>
-                      <div className='table-data-head-container' onClick={handleClick}>
+                      <div className='table-data-head-container'>
                         <span className='table-data-head'>{head}</span> 
                         <span className='table-data-img-container'><img src={vector3} alt="drop" /></span> 
                       </div>
