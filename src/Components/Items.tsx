@@ -24,16 +24,17 @@ interface User {
 
 const Items: React.FC<Props> = ({data}) => {
 
-  const displayUserDetails = () => {
-    
-
+  const displayUserDetails = (e: React.MouseEvent<HTMLTableRowElement, MouseEvent>, id: number) => {
+    console.log('Checking this out')
+    console.log(e)
+    console.log(id)
   }
 
   return (
     <>
       {data?.map((user: User) => {
             return (
-              <tr key={user.id} onClick={()=> { displayUserDetails()}}>
+              <tr key={user.id} onClick={(event)=> { displayUserDetails(event, user.id)}}>
                 <td>{user.orgName.split('-')[0]}</td>
                 <td>{`${user.profile.firstName} ${user.profile.lastName}`}</td>
                 <td>{user.email.toLocaleLowerCase()}</td>
