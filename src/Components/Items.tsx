@@ -26,7 +26,6 @@ const Items: React.FC<Props> = ({data}) => {
 
   const displayUserDetails = (e: React.MouseEvent<HTMLTableRowElement, MouseEvent>, id: number) => {
     console.log('Checking this out')
-    console.log(e)
     console.log(id)
   }
 

@@ -73,21 +73,7 @@ const Table: React.FC<Props> = ({data, itemsPerPage}) => {
               </tr>
             </thead>
             <tbody>
-              {/* {data?.data.map((user) => {
-                return (
-                  <tr>
-                    <td>{user.orgName.split('-')[0]}</td>
-                    <td>{user.userName}</td>
-                    <td>{user.email.toLocaleLowerCase()}</td>
-                    <td>{parsePhoneNumber(user.phoneNumber, 'NG')?.formatNational().split('ext')[0]}</td>
-                    <td>{format(new Date(user.createdAt), "E d, yyyy hh:mm aaaaa'm'")}</td>
-                  </tr>
-                )
-                
-              })} */}
               <Items data={currentItems} />
-              
-
             </tbody>
             
           </table>
