@@ -25,10 +25,7 @@ for(let i=0; i< 100; i++) { items.push(1) }
 
 const Table: React.FC<Props> = ({data, itemsPerPage}) => {
 
-  
-
   console.log(items)
-
 
   const [currentItems, setCurrentItems] = useState<any>(null);
   const [pageCount, setPageCount] = useState<number>(0);
