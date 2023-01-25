@@ -25,8 +25,7 @@ for(let i=0; i< 100; i++) { items.push(1) }
 
 const Table: React.FC<Props> = ({data, itemsPerPage}) => {
 
-  console.log(items)
-
+  const [displayUserDetails, setDisplayUserDetails] = useState<boolean>(false)
   const [currentItems, setCurrentItems] = useState<any>(null);
   const [pageCount, setPageCount] = useState<number>(0);
   // Here we use item offsets; we could also use page offsets
@@ -48,54 +47,61 @@ const Table: React.FC<Props> = ({data, itemsPerPage}) => {
     setItemOffset(newOffset);
   };
 
-  console.log(currentItems)
-
   return (
     <>
       <div>
-        <div className='table-container'>
-          <table>
-            <thead>
-              <tr>
-                {tableHead.map((head, index) => {
-                  return (
-                    <th key={index}>
-                      <div className='table-data-head-container'>
-                        <span className='table-data-head'>{head}</span> 
-                        <span className='table-data-img-container'><img src={vector3} alt="drop" /></span> 
-                      </div>
-                    </th>
-                  )
-                })} 
-              </tr>
-            </thead>
-            <tbody>
-              <Items data={currentItems} />
-            </tbody>
-            
-          </table>
-        </div>
-        
-        <ReactPaginate
-              nextLabel=">"
-              onPageChange={handlePageClick}
-              pageRangeDisplayed={1}
-              marginPagesDisplayed={1}
-              pageCount={pageCount}
-              previousLabel="<"
-              pageClassName="page-item"
-              pageLinkClassName="page-link"
-              previousClassName="page-item"
-              previousLinkClassName="page-link"
-              nextClassName="page-item"
-              nextLinkClassName="page-link"
-              breakLabel="..."
-              breakClassName="page-item"
-              breakLinkClassName="page-link"
-              containerClassName="pagination"
-              activeClassName="active"
-              renderOnZeroPageCount={undefined}
-            />
+        {
+          displayUserDetails ?
+          <div>
+
+          </div>
+          :
+          <div className='table-container'>
+            <table>
+              <thead>
+                <tr>
+                  {tableHead.map((head, index) => {
+                    return (
+                      <th key={index}>
+                        <div className='table-data-head-container'>
+                          <span className='table-data-head'>{head}</span> 
+                          <span className='table-data-img-container'><img src={vector3} alt="drop" /></span> 
+                        </div>
+                      </th>
+                    )
+                  })} 
+                </tr>
+              </thead>
+              <tbody>
+                <Items data={currentItems} />
+              </tbody>
+              
+            </table>
+          </div>
+        }
+    
+        {!displayUserDetails && 
+          <ReactPaginate
+            nextLabel=">"
+            onPageChange={handlePageClick}
+            pageRangeDisplayed={1}
+            marginPagesDisplayed={1}
+            pageCount={pageCount}
+            previousLabel="<"
+            pageClassName="page-item"
+            pageLinkClassName="page-link"
+            previousClassName="page-item"
+            previousLinkClassName="page-link"
+            nextClassName="page-item"
+            nextLinkClassName="page-link"
+            breakLabel="..."
+            breakClassName="page-item"
+            breakLinkClassName="page-link"
+            containerClassName="pagination"
+            activeClassName="active"
+            renderOnZeroPageCount={undefined}
+          />  
+        }
       </div>
     </>
   )

@@ -1,7 +1,7 @@
 import React from 'react';
 import {format} from 'date-fns';
 import  parsePhoneNumber  from 'libphonenumber-js';
-import ThreeDot from '../Images/threedot.png'
+import ThreeDot from '../Images/threedot.png';
 
 interface Props {
   data: any | undefined;
@@ -27,6 +27,7 @@ const Items: React.FC<Props> = ({data}) => {
   const displayUserDetails = (e: React.MouseEvent<HTMLTableRowElement, MouseEvent>, id: number) => {
     console.log('Checking this out')
     console.log(id)
+
   }
 
   return (
