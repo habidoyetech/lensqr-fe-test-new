@@ -25,7 +25,7 @@ for(let i=0; i< 100; i++) { items.push(1) }
 
 const Table: React.FC<Props> = ({data, itemsPerPage}) => {
 
-  const [displayUserDetails, setDisplayUserDetails] = useState<boolean>(false)
+  
   const [currentItems, setCurrentItems] = useState<any>(null);
   const [pageCount, setPageCount] = useState<number>(0);
   // Here we use item offsets; we could also use page offsets
@@ -50,12 +50,7 @@ const Table: React.FC<Props> = ({data, itemsPerPage}) => {
   return (
     <>
       <div>
-        {
-          displayUserDetails ?
-          <div>
-
-          </div>
-          :
+        
           <div className='table-container'>
             <table>
               <thead>
@@ -78,9 +73,9 @@ const Table: React.FC<Props> = ({data, itemsPerPage}) => {
               
             </table>
           </div>
-        }
+        
     
-        {!displayUserDetails && 
+        
           <ReactPaginate
             nextLabel=">"
             onPageChange={handlePageClick}
@@ -101,7 +96,7 @@ const Table: React.FC<Props> = ({data, itemsPerPage}) => {
             activeClassName="active"
             renderOnZeroPageCount={undefined}
           />  
-        }
+        
       </div>
     </>
   )
